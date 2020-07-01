@@ -1,0 +1,26 @@
+---
+    name: React-App-hborjal
+    path: build/
+    memory: 64M
+    instances: 1
+    disk_quota: 1024M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+        FORCE_HTTPS: false
+        CLOUD_CONNECTOR_VIRTUAL_HOST: "http://appsdev.cotemar.com.mx:443"
+    # services:
+    #     - APICor
+    # env:
+    #     destinations: >
+    #        [
+    #             {"name":"APICor", "url":"http://appsdev.cotemar.com.mx:443"},	
+    #        ]
+
+    # env:
+    #     FORCE_HTTPS: false
+    #     CLOUD_CONNECTOR_VIRTUAL_HOST: ((host-virtual))
+    #     TARGET_AUTH_USER: ((onpremise-user))
+    #     TARGET_AUTH_PASSWORD: ((onpremise-password))
+    # services:
+    #         - ((connectivity-service-name))
+    #         - standard-logging

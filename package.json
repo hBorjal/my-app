@@ -1,47 +1,53 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@ui5/webcomponents": "1.0.0-rc.7",
-    "@ui5/webcomponents-fiori": "^1.0.0-rc.7",
-    "@ui5/webcomponents-icons": "^1.0.0-rc.7",
-    "@ui5/webcomponents-react": "^0.9.11",
-    "@ui5/webcomponents-react-base": "^0.9.4",
-    "@ui5/webcomponents-react-charts": "^0.9.9",
-    "jest-environment-jsdom-sixteen": "^1.0.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env jest-environment-jsdom-sixteen",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!(@ui5|lit-html)).*\\.js$"
-    ]
-  }
+	"name": "my-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@sap/approuter": "^8.1.0",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@testing-library/user-event": "^7.1.2",
+		"@ui5/webcomponents": "1.0.0-rc.7",
+		"@ui5/webcomponents-fiori": "^1.0.0-rc.7",
+		"@ui5/webcomponents-icons": "^1.0.0-rc.7",
+		"@ui5/webcomponents-react": "^0.9.11",
+		"@ui5/webcomponents-react-base": "^0.9.4",
+		"@ui5/webcomponents-react-charts": "^0.9.9",
+		"axios": "^0.19.2",
+		"jest-environment-jsdom-sixteen": "^1.0.3",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "3.4.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env jest-environment-jsdom-sixteen",
+		"eject": "react-scripts eject",
+		"build-prd": "cross-env GENERATE_SOURCEMAP=false react-scripts build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"jest": {
+		"transformIgnorePatterns": [
+			"node_modules/(?!(@ui5|lit-html)).*\\.js$"
+		]
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.2"
+	}
 }

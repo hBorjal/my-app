@@ -22,7 +22,7 @@ import '@ui5/webcomponents-icons/dist/icons/line-chart.js';
 import '@ui5/webcomponents-icons/dist/icons/list.js';
 import '@ui5/webcomponents-icons/dist/icons/table-view.js';
 import { useHistory } from 'react-router-dom';
-import { MyCustomElement } from './MyCustomElement';
+// import { MyCustomElement } from './MyCustomElement';
 
 export function Home() {
 	const [ toggleCharts, setToggleCharts ] = useState('lineChart');
@@ -87,7 +87,6 @@ export function Home() {
 	const switchToChart = toggleCharts === 'lineChart' ? 'Bar Chart' : 'Line Chart';
 	return (
 		<FlexBox justifyContent={FlexBoxJustifyContent.Center} wrap={FlexBoxWrap.Wrap}>
-			<MyCustomElement />
 			<Card
 				avatar={<Icon name={toggleCharts === 'lineChart' ? 'line-chart' : 'horizontal-bar-chart'} />}
 				heading="Stock Price"
